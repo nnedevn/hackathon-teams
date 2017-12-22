@@ -1,0 +1,12 @@
+<h1> <%=team.name%> Change your team composition?</h1>
+
+<form class="edit-form" action="/teams/<%=team.name%>" class="edit-form">
+  <div class="form-group">
+    <label for="">Team Name:</label>
+  <input id="new-name" class="form-control" type="text" name="team" value="<%=team.name%>">
+  </div>
+  <div><label for="">Members</label>
+  <input id="members" class="form-control" type="text" name="members" value="<%=team.members%>"></div>
+  <!-- <input type="hidden" value="<%=team.name%>"> -->
+  <input class="btn btn-success" type="submit" value="submit">
+</form>
